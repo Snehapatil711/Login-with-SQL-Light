@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ragister"
+    android:background="@drawable/img">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration Page"
+            android:textStyle="bold"
+            android:textSize="42sp"
+            android:textColor="@color/white1"
+            android:layout_marginTop="130dp" />
+
+        <EditText
+            android:id="@+id/RUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_baseline_person_30"
+            android:ems="10"
+            android:hint="User Name"
+            android:textColor="@color/white1"
+            android:drawablePadding="10dp"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/white1"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/RPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:drawablePadding="10dp"
+            android:textSize="28sp"
+            android:textColorHint="@color/white1"
+            android:textColor="@color/white1"
+            android:drawableLeft="@drawable/ic_baseline_lock"
+            android:background="@drawable/input_bg"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/RRepassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            android:drawablePadding="10dp"
+            android:textSize="28sp"
+            android:textColorHint="@color/white1"
+            android:textColor="@color/white1"
+            android:drawableLeft="@drawable/ic_baseline_lock"
+            android:background="@drawable/input_bg"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/RDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Date"
+            android:inputType="textPersonName"
+            android:drawablePadding="10dp"
+            android:textSize="28sp"
+            android:textColorHint="@color/white1"
+            android:textColor="@color/white1"
+            android:drawableLeft="@drawable/ic_baseline_calendar"
+            android:background="@drawable/input_bg"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/RButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_bg"/>
+
+    </LinearLayout>
+
+</ScrollView>

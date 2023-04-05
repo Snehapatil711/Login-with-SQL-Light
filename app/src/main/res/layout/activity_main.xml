@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/img">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Page"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:textColor="@color/white1"
+            android:layout_marginTop="130dp" />
+
+        <EditText
+            android:id="@+id/UserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_baseline_person_30"
+            android:ems="10"
+            android:hint="User Name"
+            android:drawablePadding="10dp"
+            android:inputType="textPersonName"
+            android:textColor="@color/white1"
+            android:textColorHint="@color/white1"
+            android:textSize="28sp"/>
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColor="@color/white1"
+            android:drawablePadding="10dp"
+            android:textSize="28sp"
+            android:textColorHint="@color/white1"
+            android:drawableLeft="@drawable/ic_baseline_lock"
+            android:background="@drawable/input_bg"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/Loginbtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_bg"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="New Registration ?"
+                android:textColor="@color/white1"
+                android:textSize="25dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Forgot Password ?"
+                android:textColor="@color/white1"
+                android:textSize="25dp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/Registerbtn"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:text="click here"
+                android:textSize="20dp"
+                android:background="@drawable/btn_bg"/>
+
+            <Button
+                android:id="@+id/Fargetpassbtn"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:text="click here"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_marginStart="70dp"
+                android:background="@drawable/btn_bg"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
